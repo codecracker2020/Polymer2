@@ -1,4 +1,13 @@
 <link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/paper-toggle-button/paper-toggle-button.html">
+<style is="custom-style">
+  #container {
+    padding: 16px;
+    display: flex;
+  }
+
+</style>
+</style>
 
 <dom-module id="mymachines-app">
   <template>
@@ -8,6 +17,10 @@
       }
     </style>
     <h2>Hello [[prop1]]!</h2>
+    <div id="container">
+  <paper-toggle-button checked></paper-toggle-button>
+<paper-toggle-button disabled></paper-toggle-button>
+</div>
   </template>
 
   <script>
